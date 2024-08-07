@@ -1,0 +1,82 @@
+
+header {
+    width: 100%;
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  img {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  
+  #nav_bar li {
+    display: inline-block;
+    padding: 8px;
+  }
+
+
+  .credentials {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  
+  .sign_up {
+    background: #896432; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+    color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+
+  }
+
+  .log_in {
+    background: #896432; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+    color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .nav-links {
+    color: #404040;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li.nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  #sign_in:hover { 
+    box-shadow: 1px 1px 5px #999;
+  }
+  
