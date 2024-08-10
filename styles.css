@@ -1,6 +1,6 @@
-
 body {
     width: auto;
+    color: #896432; 
     font-family: "Handlee", cursive;
     font-weight: 400;
     font-style: normal;
@@ -23,10 +23,14 @@ body {
   
   ul {
     list-style: none;
+    font-size: 20px;
+    color: #896432; 
+
   }
   
   
   #nav_bar li {
+    color: #896432; 
     display: inline-block;
     padding: 8px;
     font-size: 20px;
@@ -87,22 +91,55 @@ body {
   
   #lemon-cake{
     width:500px;
+    height: 500px;
     margin:0;
-    margin-right: 80px;
+    padding:0;
+    margin-right: 140px;
     border-radius: 50px;
   }
 
-  .recipe{
+    .recipe-container {
     display: flex;
-    margin-top: 50px;
+    justify-content: left;
+    align-items: start;
+    margin: 70px auto 70px;
+  }
+
+.icons {
+    display: flex;
+    justify-content: normal;
+    margin-top: 20px;
+}
+
+  .icons img {
+    width: 50px;
+    height: auto;
+    margin: 5px; 
+} 
+
+  .method {
+    justify-content: left;
+    margin: 70px auto 70px;
+  }
+
+  h2, h3 {
+    font-weight: bold;
+    margin-top: 20px;
   }
 
   .description {
-    display: flex;
-    justify-content: end;
-    align-items: start;
+    margin-bottom:20px;
   }
 
-  h2 {
-    font-weight: bold;
+  p, strong {
+    color: #896432; 
+    display: grid;
+    font-size: 20px;
   }
+
+  p1 {
+    color: #896432; 
+    display: grid;
+    font-size: 20px;
+  }
+
