@@ -143,3 +143,14 @@ body {
     font-size: 20px;
   }
 
+  .list-group-item {
+    color: #896432; 
+  }
+
+  .reviews {
+    background-color: #FFEEDD;
+  }
+
+  .users_name {
+    background-color: white;;
+  }
