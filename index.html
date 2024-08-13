@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Handlee&family=Kalnia+Glaze:wght@100..700&family=Playwrite+PE:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/c407749a29.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -84,16 +85,72 @@
     </div>
   </div>
 
-  <div class="reviews">
-    <h2 class="title">User Reviews</h2>
-    <p class ="users_name">Jill</p>
-      <p class = "users_comment">Scrummy lemon cake </p>
-      <p class ="users_name">Jack</p>
-      <p class = "users_comment">Baked this for my wife... she hated it </p>
-      <p class ="users_name">Dave</p>
-      <p class = "users_comment">Best cake ever</p>
-    
+  <div id="myCarousel">    
+    <h2>User Comments</h2>        
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div id="myCarouselInner" class="carousel-inner p-5">
+        <div id="myCarouselItem1" class="carousel-item active" data-bs-interval="10000"> 
+          <p class="d-flex w-auto" alt="...">An interesting quote slide 1</p>
+          <h5>Dipti, London</h5>
+      </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <p class="d-flex w-auto" alt="...">An interesting quote slide 2</p>
+              <h5>Claire, Leeds</h5>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <p class="d-flex w-auto" alt="...">I love Pastel De Nata's but I don't always have the time to make puff pastry from scratch, using a ready made pastry makes this super quick. love it!</p>
+              <h5>Charlotte, from Ipswich</h5>
+            </div>
+      </div>
 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>  
   </div>
+
+  <footer>
+    <div class="footer">
+     <div class="footer-row">
+       <div class="footer-col">
+         <h4>Baking Buddy</h4>
+         <ul class="links">
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+           <li><a href="#">Terms & Condtions</a></li>
+         </ul>
+         <div class="icons">
+           <i class="fa-brands fa-facebook-f"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-tiktok"></i>
+         </div>
+       </div>
+       <div class="footer-col">
+         <h4>Newsletter</h4>
+         <p>
+           Subscribe to our newsletter for a weekly dose
+           of delicious recipes, helpful tips, and inspirations.
+         </p>
+         <form action="#">
+           <input type="text" placeholder="Enter your email" required>
+           <button type="submit">SUBSCRIBE</button>
+         </form>
+       </div>
+     </div>
+   </div>
+</footer>
+
     </body>
 </html>

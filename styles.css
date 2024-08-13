@@ -32,8 +32,9 @@ body {
   #nav_bar li {
     color: #896432; 
     display: inline-block;
-    padding: 8px;
+    padding: 20px;
     font-size: 20px;
+    font-weight: bold;
     margin-left: 12px;
     margin-right: 12px;
   }
@@ -48,7 +49,7 @@ body {
   .sign_up {
     background: #896432; 
     margin-right: 25px;
-    padding: 7px 15px;
+    padding: 8px 15px;
     border-radius: 3px; 
     font-weight: bold;
     color: #fff;
@@ -120,9 +121,10 @@ body {
   .method {
     justify-content: left;
     margin: 70px auto 70px;
+    padding-bottom: 100px;
   }
 
-  h2, h3 {
+  h2, h3, h5 {
     font-weight: bold;
     margin-top: 20px;
   }
@@ -147,10 +149,159 @@ body {
     color: #896432; 
   }
 
-  .reviews {
-    background-color: #FFEEDD;
-  }
+  #myCarouselIndicators {
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%; 
+    width: 95%;
 
-  .users_name {
-    background-color: white;;
+}
+
+#myCarousel { 
+    position: relative;
+    background-color: #80b574;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 15% 10px 15%;
+    height: 10%
+}
+
+#myCarousel h2 {
+    color: aliceblue;
+    text-align: center;
+    margin: 5px;
+}
+
+#myCarouselItem1{
+    margin: 0 auto;
+}
+             
+.carousel-control-prev {
+    right: auto;
+    left: 20px;
+}
+.carousel-control-next {
+    left: auto;
+    right: 20px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #896432;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Handlee", cursive;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 40px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-col .links {
+  margin-top: 10px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-col p {
+  margin: 10px 0;
+  color: white;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid ;
+  color: white;
+  padding-left: 10px;
+  font-family: "Handlee", cursive;
+}
+
+.footer-col input::placeholder {
+  color: white;
+}
+
+ .footer-col form button {
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Handlee", cursive;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: white;
+}
+
+.footer-col .icons i:hover  {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
   }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 15px 0 0 0;
+  }
+}
+
+
+
+
+
