@@ -40,7 +40,7 @@
   <div class="container mt-5">
     <div class="recipe-container">
         <div class="recipe">
-            <img id="Pasteis-de-nata" src="images\Pasteis-de-nata.jpg" alt="Cheat's Pasteis De Nata">
+            <img id="pasteis-de-nata" src="images\Pasteis-de-nata.jpg" alt="Cheat's Pasteis De Nata">
         </div>
         <div class="ingredients" style="width: 700px;">
             <h2 class="description">Cheat's Pasteis De Nata</h2>
@@ -69,6 +69,8 @@
       <div class="method">
         <h2 class="description">Method</h2>
         <div class="list">
+          <div class="list-group-item"><strong>Top Tip</strong></li>
+          <p>If your pastry is all-butter or butter enriched, leave at room temperature for 10min before unrolling.</p>    
           <div class="list-group-item"><strong>Step 1</strong></li>
           <p>Preheat oven to 240°C (220°C fan) mark 9. Unroll pastry and fold in 1⁄2, short edge to short edge. Roll pastry up tightly, starting from the joined short edges, to form a log. Wrap in the baking parchment the pastry came in and chill for 5-10min, to firm up.</p>
           <div class="list-group-item"><strong>Step 2</strong></li>
@@ -85,73 +87,98 @@
     </div>
   </div>
 
-    
-  <div id="myCarousel">    
-    <h2>User Comments</h2>        
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div id="myCarouselInner" class="carousel-inner p-5">
-        <div class="carousel-item active" data-bs-interval="10000"> 
-          <p class="d-flex w-auto" alt="...">An interesting quote slide 1</p>
-          <h5>Dipti, London</h5>
-      </div>
-            <div class="carousel-item" data-bs-interval="10000">
-              <p class="d-flex w-auto" alt="...">An interesting quote slide 2</p>
-              <h5>Claire, Leeds</h5>
-            </div>
-            <div class="carousel-item" data-bs-interval="10000">
-              <p class="d-flex w-auto" alt="...">I love Pastel De Nata's but I don't always have the time to make puff pastry from scratch, using a ready made pastry makes this super quick. love it!</p>
-              <h5>Charlotte, from Ipswich</h5>
-            </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
+  <div class="container mt-3">
+    <div id="myCarousel" class="carousel slide">
+      <ul class="carousel-indicators">
+        <li class="item1 active"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+      </ul>
       
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>  
-  </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p class = "user_review">⭐⭐⭐⭐</p>
+          <p class = "user_detail">I love a Pastel De Nata, but scratch made pastry is so time consuming; This is a great alternative!</p>
+          <p class = "user_name">Charlotte, Ipswich</p>
+        </div>
+        <div class="carousel-item">
+          <p class = "user_review">⭐⭐⭐⭐⭐</p>
+          <p class = "user_detail">Simply Delicious.</p>
+          <p class = "user_name">Dipti, London</p>
+        </div>
+        <div class="carousel-item">
+          <p class = "user_review">⭐⭐⭐⭐</p>
+          <p class = "user_detail">  Using ready-rolled pastry and fresh custard makes these so easy!</p>
+          <p class = "user_name">Claire, Leeds</p>
+        </div>
+      </div>
+ 
 
-  <footer>
-    <div class="footer">
-     <div class="footer-row">
-       <div class="footer-col">
-         <h4>Baking Buddy</h4>
-         <ul class="links">
-           <li><a href="#">About us</a></li>
-           <li><a href="#">Privacy Policy</a></li>
-           <li><a href="#">Terms & Condtions</a></li>
-         </ul>
-         <div class="icons">
-           <i class="fa-brands fa-facebook-f"></i>
-           <i class="fa-brands fa-twitter"></i>
-           <i class="fa-brands fa-instagram"></i>
-           <i class="fa-brands fa-tiktok"></i>
+
+      <a class="carousel-control-prev" href="#myCarousel">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    </div>
+    <footer>
+      <div class="footer">
+       <div class="footer-row">
+         <div class="footer-col">
+           <h4><strong>Baking Buddy</strong></h4>
+           <ul class="links">
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Privacy Policy</a></li>
+             <li><a href="#">Terms & Condtions</a></li>
+           </ul>
+           <div class="icons">
+             <i class="fa-brands fa-facebook-f"></i>
+             <i class="fa-brands fa-twitter"></i>
+             <i class="fa-brands fa-instagram"></i>
+             <i class="fa-brands fa-tiktok"></i>
+           </div>
+         </div>
+         <div class="footer-col">
+           <h4><strong>Newsletter</strong></h4>
+           <p>
+             Subscribe to our newsletter for a weekly dose
+             of delicious recipes, helpful tips, and inspirations.
+           </p>
+           <form action="#">
+             <input type="text" placeholder="Enter your email" required>
+             <button type="submit">SUBSCRIBE</button>
+           </form>
          </div>
        </div>
-       <div class="footer-col">
-         <h4>Newsletter</h4>
-         <p>
-           Subscribe to our newsletter for a weekly dose
-           of delicious recipes, helpful tips, and inspirations.
-         </p>
-         <form action="#">
-           <input type="text" placeholder="Enter your email" required>
-           <button type="submit">SUBSCRIBE</button>
-         </form>
-       </div>
      </div>
-   </div>
   </footer>
-
+  <script>
+    $(document).ready(function(){
+      // Activate Carousel
+      $("#myCarousel").carousel();
+        
+      // Enable Carousel Indicators
+      $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+      });
+      $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+      });
+      $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+      });
+        
+      // Enable Carousel Controls
+      $(".carousel-control-prev").click(function(){
+        $("#myCarousel").carousel("prev");
+      });
+      $(".carousel-control-next").click(function(){
+        $("#myCarousel").carousel("next");
+      });
+    });
+    </script>
+  
     </body>
 </html>
