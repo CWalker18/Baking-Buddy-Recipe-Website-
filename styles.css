@@ -90,7 +90,7 @@ body {
     box-shadow: 1px 1px 5px #999;
   }
   
-  #lemon-cake{
+  #lemon-cake, #Pasteis-de-nata{
     width:500px;
     height: 500px;
     margin:0;
@@ -99,7 +99,7 @@ body {
     border-radius: 50px;
   }
 
-    .recipe-container {
+  .recipe-container {
     display: flex;
     justify-content: left;
     align-items: start;
@@ -148,27 +148,29 @@ body {
   .list-group-item {
     color: #896432; 
   }
-
+/*Carousel styling */
   #myCarouselIndicators {
     transform: translate(-50%, -50%);
     position: relative;
     left: 50%; 
     width: 95%;
-
 }
 
 #myCarousel { 
     position: relative;
-    background-color: #80b574;
+    background-color: #328A7C;
     padding: 5px 5px 5px 5px;
     margin: 10px 15% 10px 15%;
     height: 10%
 }
 
-#myCarousel h2 {
-    color: aliceblue;
+#myCarousel h2, p{
+    color: #4F341D;
     text-align: center;
     margin: 5px;
+}
+#myCarousl h5{
+  color: #4F341D;
 }
 
 #myCarouselItem1{
@@ -183,6 +185,8 @@ body {
     left: auto;
     right: 20px;
 }
+
+/*Footer styling*/
 
 .footer {
   left: 0;
