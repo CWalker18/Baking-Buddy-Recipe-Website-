@@ -115,7 +115,7 @@ body {
   .method, .inspireYou {
     justify-content: left;
     margin: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
   }
 
   h1{
@@ -147,12 +147,6 @@ body {
     color: #896432; 
   }
 
-  .list-group-item3 {
-    color: #896432; 
-    padding-bottom: 15px;
-    border-bottom: 2px solid #e9ecef;
-  }
-
 /*Carousel styling*/
 
   #myCarouselIndicators {
@@ -165,7 +159,6 @@ body {
 
 #myCarousel {
   position: relative;
-  border-radius:10px;
   padding: 5px 5px 5px 5px;
   margin: 10px 15% 10px 15%;
   height: 40%;
@@ -182,9 +175,15 @@ body {
 }
    
 #myCarousel.carousel.slide {
+  border-top: 2px solid #e9ecef;
   border-bottom: 2px solid #e9ecef;
   margin-top: 50px;
   margin-bottom: 75px;
+  width: 75%;
+}
+
+.user_review {
+  padding-top: 50px;
 }
 
 .carousel-item.active {
@@ -198,7 +197,6 @@ body {
   bottom: 0;
   z-index: 10;
   width: 100%;
-  /* background-color: #896432; */
   border-radius: 6px;
   margin: 0;
   padding: 0;
