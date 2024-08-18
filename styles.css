@@ -78,7 +78,7 @@ body {
     color: #bab1a6; 
   }
   
-  #lemon-cake{
+  #lemon-cake, #pasteis-de-nata{
     width:500px;
     height: 500px;
     margin:0;
@@ -144,6 +144,8 @@ body {
     border-bottom: 2px solid #e9ecef;
   }
 
+/*Carousel styling*/
+
   #myCarouselIndicators {
     transform: translate(-50%, -50%);
     position: relative;
@@ -179,6 +181,8 @@ body {
 .carousel-item.active {
   margin-bottom: 50px;
 }
+
+/*footer styling*/
 
 .footer {
   left: 0;
