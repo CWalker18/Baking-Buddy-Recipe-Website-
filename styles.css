@@ -107,6 +107,11 @@ body {
     margin: 5px; 
 } 
 
+#top-tip, #top-tip-item {
+  font-style: italic;
+  font-weight: bolder;
+}
+
   .method {
     justify-content: left;
     margin: 50px;
