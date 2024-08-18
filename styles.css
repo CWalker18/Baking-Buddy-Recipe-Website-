@@ -43,10 +43,9 @@ body {
   .credentials {
     display: flex;
     justify-content: flex-start;
-
   }
   
-  .sign_up {
+  .sign_up, .log_in {
     background: #896432; 
     margin-right: 25px;
     padding: 8px 15px;
@@ -58,19 +57,6 @@ body {
     padding-left: 25px;
     padding-right: 25px;
 
-  }
-
-  .log_in {
-    background: #896432; 
-    margin-right: 25px;
-    padding: 7px 15px;
-    border-radius: 3px; 
-    font-weight: bold;
-    color: #fff;
-    border-radius: 35px;
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   
   .nav-links {
@@ -84,13 +70,15 @@ body {
   
   li.nav-links a:hover {
     text-decoration: underline;
+    color: #bab1a6; 
   }
   
-  #sign_in:hover { 
-    box-shadow: 1px 1px 5px #999;
+  .credentials a:hover {
+    text-decoration: underline;
+    color: #bab1a6; 
   }
   
-  #lemon-cake, #Pasteis-de-nata{
+  #lemon-cake{
     width:500px;
     height: 500px;
     margin:0;
@@ -99,11 +87,12 @@ body {
     border-radius: 50px;
   }
 
-  .recipe-container {
+    .recipe-container {
     display: flex;
     justify-content: left;
     align-items: start;
-    margin: 70px auto 70px;
+    margin: 50px auto 50px;
+    border-bottom: 2px solid #e9ecef;
   }
 
 .icons {
@@ -120,8 +109,8 @@ body {
 
   .method {
     justify-content: left;
-    margin: 70px auto 70px;
-    padding-bottom: 100px;
+    margin: 50px;
+    padding-bottom: 75px;
   }
 
   h2, h3, h5 {
@@ -148,52 +137,55 @@ body {
   .list-group-item {
     color: #896432; 
   }
-/*Carousel styling */
+
+  .list-group-item3 {
+    color: #896432; 
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e9ecef;
+  }
+
   #myCarouselIndicators {
     transform: translate(-50%, -50%);
     position: relative;
     left: 50%; 
     width: 95%;
+
 }
 
-#myCarousel { 
-    position: relative;
-    background-color: #328A7C;
-    padding: 5px 5px 5px 5px;
-    margin: 10px 15% 10px 15%;
-    height: 10%
+#myCarousel {
+  position: relative;
+  border-radius:10px;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 15% 10px 15%;
+  height: 40%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#myCarousel h2, p{
-    color: #4F341D;
-    text-align: center;
-    margin: 5px;
-}
-#myCarousl h5{
-  color: #4F341D;
-}
 
 #myCarouselItem1{
     margin: 0 auto;
 }
-             
-.carousel-control-prev {
-    right: auto;
-    left: 20px;
-}
-.carousel-control-next {
-    left: auto;
-    right: 20px;
+   
+#myCarousel.carousel.slide {
+  border-bottom: 2px solid #e9ecef;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 
-/*Footer styling*/
+.carousel-item.active {
+  margin-bottom: 50px;
+}
 
 .footer {
   left: 0;
   bottom: 0;
   z-index: 10;
   width: 100%;
-  background-color: #896432;
+  /* background-color: #896432; */
   border-radius: 6px;
   margin: 0;
   padding: 0;
@@ -202,15 +194,17 @@ body {
 }
 
 .footer-row {
+  color: #896432; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
-  padding: 40px;
+  padding: 20px;
+  width: 100%;
 }
 
 .footer-col h4 {
-  color: #fff;
+  /* color: #fff; */
   font-size: 20px;
 }
 
@@ -221,16 +215,23 @@ body {
 .footer-col .links li {
   list-style: none;
   margin-bottom: 10px;
+  padding-left: 0px;
+}
+
+.links {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .footer-col .links li a {
-  text-decoration: none;
-  color: white;
+  list-style: none;
+  color: #896432; 
 }
 
 .footer-col p {
   margin: 10px 0;
-  color: white;
+  color: #896432; 
   max-width: 300px;
 }
 
@@ -246,17 +247,19 @@ body {
   width: 100%;
   outline: none;
   border: 1px solid ;
-  color: white;
+  color: #896432; 
   padding-left: 10px;
   font-family: "Handlee", cursive;
 }
 
 .footer-col input::placeholder {
-  color: white;
+  color: #896432; 
 }
 
  .footer-col form button {
-  background: white;
+  background-color: #896432; 
+  color: white;
+  font-weight: bold;
   border: none;
   padding: 10px 15px;
   border-radius: 6px;
@@ -267,6 +270,7 @@ body {
 }
 
 .footer-col .icons {
+  color: #896432; 
   display: flex;
   margin-top: 30px;
   gap: 30px;
@@ -274,11 +278,11 @@ body {
 }
 
 .footer-col .icons i {
-  color: white;
+  color: #896432; 
 }
 
 .footer-col .icons i:hover  {
-  color: white;
+  color: #bab1a6; 
 }
 
 @media (max-width: 768px) {
@@ -293,6 +297,7 @@ body {
   .footer .footer-row {
     padding: 20px;
     gap: 1rem;
+    width: 100%;
   }
   .footer-col form {
     display: block;
@@ -304,6 +309,15 @@ body {
     margin: 15px 0 0 0;
   }
 }
+
+.mt-3 {
+margin: 0;
+padding: 0;
+}
+
+
+
+
 
 
 
