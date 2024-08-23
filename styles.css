@@ -58,7 +58,31 @@ body {
     padding-right: 25px;
 
   }
-  
+
+  .inspire-me {
+    background: #896432; 
+    margin: 10px;
+    padding: 12px 45px;
+    border-radius: 3px; 
+    font-weight: bold;
+    color: #fff;
+    border-radius: 35px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+.bigcake {
+  position: right;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-right: 140px;
+  border-radius: 50px;
+}
+
+
   .nav-links {
     color: #404040;
   }
@@ -73,7 +97,7 @@ body {
     color: #bab1a6; 
   }
   
-  .credentials a:hover {
+ .credentials a:hover {
     text-decoration: underline;
     color: #bab1a6; 
   }
@@ -87,13 +111,13 @@ body {
     border-radius: 50px;
   }
 
-    .recipe-container {
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    margin: 50px auto 50px;
-    border-bottom: 2px solid #e9ecef;
-  }
+.recipe-container {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 50px auto 50px;
+  border-bottom: 2px solid #e9ecef;
+}
 
 .icons {
     display: flex;
@@ -101,7 +125,7 @@ body {
     margin-top: 20px;
 }
 
-  .icons img {
+.icons img {
     width: 50px;
     height: auto;
     margin: 5px; 
@@ -112,24 +136,31 @@ body {
   font-weight: bolder;
 }
 
-  .method, .inspireYou {
-    justify-content: left;
-    margin: 50px;
-    padding-bottom: 20px;
-  }
+.method, .inspireYou {
+  justify-content: left;
+  margin: 50px;
+  padding-bottom: 20px;
+}
 
-  h1{
-    font-weight: bolder;
-  }
+h1{
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
-  h2, h3, h5 {
-    font-weight: bold;
-    margin-top: 20px;
-  }
+.highlight {
+  font-size: larger;
+}
 
-  .description {
-    margin-bottom:20px;
-  }
+h2, h3, h5 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.description {
+  margin-bottom:20px;
+}
 
   p, strong {
     color: #896432; 
