@@ -70,6 +70,7 @@ body {
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
+    font-size: 25px;
   }
 
 .bigcake {
@@ -151,6 +152,11 @@ h1{
 
 .highlight {
   font-size: larger;
+}
+
+.right-middle{
+  align-content: center;
+  text-align: center;
 }
 
 h2, h3, h5 {
