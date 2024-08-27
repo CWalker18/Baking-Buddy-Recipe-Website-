@@ -84,7 +84,7 @@ body {
 }
 
 
-  .nav-links {
+  .nav-links .inspire-me {
     color: #404040;
   }
   
@@ -99,6 +99,11 @@ body {
   }
   
  .credentials a:hover {
+    text-decoration: underline;
+    color: #bab1a6; 
+  }
+
+  .inspire-me:hover {
     text-decoration: underline;
     color: #bab1a6; 
   }
