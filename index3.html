@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Recipe Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,11 @@
   <header>
     <div class="top_bar">
     <div class="logo">
-      <a href="#" id="img"><img src="images/Logo1.png" alt="picture of a logo"/></a>
+      <a href="index.html" id="img"><img src="images/Logo1.png" alt="picture of a logo"/></a>
     </div>
     <nav>
       <ul id="nav_bar">
-        <li class="nav-links" id="home"><a href="#">Home</a></li>
+        <li class="nav-links" id="home"><a href="index.html">Home</a></li>
         <li class="nav-links"><a href="#">Categories</a></li>
          <li class="nav-links"><a href="#">Recipes</a></li>
         <li class="nav-links"><a href="#">Dietary Needs</a></li>
@@ -37,43 +37,51 @@
   </div> 
   </header>
 
-  <h1>Welcome to <span class="highlight">Baking Buddy</span>!</h1>
 
+  <div class="container mt-5">
+    <div class="recipe-container">
+        <div class="recipe">
+            <img id="lemon-cake" src="images/LemonCake.png" alt="Gluten-Free Lemon Cake">
+        </div>
+        <div class="ingredients" style="width: 700px;">
+            <h2 class="description">Gluten-Free Lemon Cake</h2>
+            <span style="display: flex; align-items: center;">
+              <i style="font-size:24px; margin-right: 5px;" class="fa">&#xf017;</i>
+              <p1 style="margin: 0;">Cooking time: 55 minutes</p1>
+          </span>
+            <h3 class="title">Ingredients</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">200g butter</li>
+                <li class="list-group-item">150g caster sugar</li>
+                <li class="list-group-item">4 eggs</li>
+                <li class="list-group-item">250g gluten-free plain flour</li>
+                <li class="list-group-item">2 tsp gluten-free baking powder</li>
+                <li class="list-group-item">1 lemon, zest and juiced</li>
+                <li class="list-group-item">250g icing sugar</li>
+                <li class="list-group-item">1 lemon, juiced</li>
+            </ul>
 
-
-  <div class="container">
-    <div class="row right-middle">
-      <div class="col-lg-6 right-middle">
-        <h2>What will you bake today?</h2>
-        <a class="inspire-me" href="index.html">Inspire me</a>
-      </div>
-      <div class="col-lg-6">
-        <img class="bigcake" src="images\Roulade.jpg">
-      </div>
+            <div class="icons">
+                <img id="glutenFree" src="images/GlutenFree.png" alt="Gluten Free Icon" />
+                <img id="nutFree" src="images/NutFree.png" alt="Nut Free Icon" />
+                <img id="veg" src="images/VegIcon.png" alt="Vegetarian Icon" />
+            </div>
+        </div>
     </div>
-  </div>
-  
+</div>
+
   <div class="container">
-      <div class="inspireYou">
-        <h2 class="description">Let Baking Buddy inspire you!</h2>
-        <div class="list-group-item">
-           <p>Bringing you the best recipes on the internet, together we will make baking simple and fun. Let us be your Baking Buddy!</p>
+      <div class="method">
+        <h2 class="description">Method</h2>
+        <div class="list">
+          <div class="list-group-item"><strong>Step 1</strong></div>
+          <p>Heat the oven to 180°C/gas 4. Butter 900g loaf tin (about 25cm long) and line with baking parchment. Beat the butter and sugar together in a stand mixer or using an electric whisk for 3-4 mins until light and creamy. Gradually crack in the eggs, one at a time, beating well after each addition.</p>
+          <div class="list-group-item"><strong>Step 2</strong></div>
+          <p>Combine the flour and baking powder in a bowl. Beat the lemon zest and juice into the wet ingredients until combined, then gently fold in the flour mixture. Spread the batter into the prepared tin and smooth the surface. Bake for 40-45 mins until golden and a skewer inserted into the centre comes out with just a few crumbs clinging to it. Remove from the oven and leave to cool in the tin for 10 mins, then remove from the tin and leave to cool completely on a wire rack.</p>
+          <div class="list-group-item"><strong>Step 3</strong></div>
+          <p>For the icing, sift the icing sugar into a bowl and add 3 tbsp of the lemon juice. Whisk together, adding more lemon juice, a teaspoon at a time, until the icing is thick but drizzly. Drizzle the icing over the cooled cake and leave to set for 15-20 mins before slicing.</p>
         </div>
       </div>
-  </div>
-  
-<div id="my-Thumbnail-container" class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <a href="index.html"><img src="images\LemonCake.png" class="img-thumbnail" alt="Lemon Cake" 1></a>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <a href="index2.html"><img src="images\Pasteis-de-nata.jpg" class="img-thumbnail" alt="Pasteis de nata" 2></a>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4">
-      <!--<a href="#">--><img src="images\Roulade.jpg" class="img-thumbnail" alt="Raspberry Roulade" 3><!-- this should have been a link to the third recipe page</a>-->
-      </div>
-    </div>
   </div>
 
   <div class="container mt-3">
@@ -86,18 +94,18 @@
       
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <p class = "user_review">⭐⭐⭐⭐</p>
-          <p class = "user_detail">Baking Buddy is literally my best buddy in the kitchen.</p>
+          <p class = "user_review">⭐⭐⭐⭐⭐</p>
+          <p class = "user_detail">The cake was fantastic, easy to bake.</p>
           <p class = "user_name">Charlotte, Ipswich</p>
         </div>
         <div class="carousel-item">
-          <p class = "user_review">⭐⭐⭐⭐⭐</p>
-          <p class = "user_detail">I'd give this website ten stars if I could!</p>
+          <p class = "user_review">⭐⭐⭐⭐</p>
+          <p class = "user_detail">It has a lovely zesty flavour. A great recipe.</p>
           <p class = "user_name">Dipti, London</p>
         </div>
         <div class="carousel-item">
           <p class = "user_review">⭐⭐⭐⭐⭐</p>
-          <p class = "user_detail">I wish I'd found Baking Buddy years ago!</p>
+          <p class = "user_detail">My husband loves this cake. I bake it every week.</p>
           <p class = "user_name">Claire, Leeds</p>
         </div>
       </div>
